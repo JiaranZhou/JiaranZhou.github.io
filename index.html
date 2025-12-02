@@ -22,6 +22,32 @@
 </script>
 
 <style>
+    /* 页面布局样式 */
+#layout-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #layout-content {
+        width: 95%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #layout-content {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
 div.noshow { display: none; }
 div.bibtex {
     margin-left: 1em;
@@ -58,7 +84,7 @@ div.bibtex pre { font-family: Georgia, Times, Arial; font-size: 85%; overflow: a
 -->
     </script>
 
-<div id="layout-content" style="margin-top:25px">
+<div id="layout-content">
 
 <table>
 	<tbody>
